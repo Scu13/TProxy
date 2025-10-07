@@ -18,11 +18,11 @@ mkdir -p /etc/TProxy
 
 # 下载Sing-box二进制文件
 echo "正在下载Sing-box二进制文件..."
-wget -O /etc/TProxy/sing-box-1.13.0 https://codeberg.org/shangkouyou/Sing-box/raw/branch/main/sing-box/sing-box-1.13.0
+wget -O /etc/TProxy/sing-box-1.13.0 https://raw.githubusercontent.com/Scu13/TProxy/refs/heads/main/sing-box/sing-box-1.13.0
 
 # 下载配置文件
 echo "正在下载配置文件..."
-wget -O /etc/TProxy/config.json https://codeberg.org/shangkouyou/Sing-box/raw/branch/main/sing-box/config.json
+wget -O /etc/TProxy/config.json https://raw.githubusercontent.com/Scu13/TProxy/refs/heads/main/sing-box/config.json
 
 # 设置二进制文件权限
 chmod +x /etc/TProxy/sing-box-1.13.0
