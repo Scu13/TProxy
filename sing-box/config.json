@@ -155,12 +155,12 @@
   "experimental": {
     "cache_file": {
       "enabled": true,
-      "path": "/root/cache.db",
+      "path": "/etc/TProxy/cache.db",
       "store_fakeip": true
     },
     "clash_api": {
       "external_controller": "0.0.0.0:80",
-      "external_ui": "/root/ui",
+      "external_ui": "/etc/TProxy/ui",
       "external_ui_download_url": "https://ghfast.top/https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
       "external_ui_download_detour": "🎯 全球直连",
       "secret": "1381ni",
