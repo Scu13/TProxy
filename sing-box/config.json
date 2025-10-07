@@ -5,7 +5,7 @@
       "tag": "Surge",
       "health_check": {
           "enabled": false,
-          "url": "https://www.gstatic.com/generate_204",
+          "url": "http://www.google.com/generate_204",
           "interval": "10m",
           "timeout": "3s"
       },
@@ -161,7 +161,7 @@
     "clash_api": {
       "external_controller": "0.0.0.0:80",
       "external_ui": "/root/ui",
-      "external_ui_download_url": "https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
+      "external_ui_download_url": "https://gh-proxy.com/https://github.com/Zephyruso/zashboard/releases/latest/download/dist.zip",
       "external_ui_download_detour": "🎯 全球直连",
       "secret": "1381ni",
       "default_mode": "rule"
