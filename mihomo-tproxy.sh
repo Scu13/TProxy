@@ -38,8 +38,8 @@ echo "保存 iptables 规则..."
 iptables-save > /etc/iptables/iptables_rules.ipv4
 
 # 创建 systemd 服务，设置开机自启
-echo "创建 MIHOMO 开机自启服务..."
-cat <<EOF > /etc/systemd/system/mihomo.service
+echo "创建 MIHOMO Tproxy 开机自启服务..."
+cat <<EOF > /etc/systemd/system/mihomo-tproxy.service
 [Unit]
 Description=Mihomo Tproxy rule
 After=network.target
@@ -53,13 +53,13 @@ ExecStart=/sbin/ip rule add fwmark 1 table 100 ; /sbin/ip route add local 0.0.0.
 WantedBy=multi-user.target
 EOF
 
-# 启用 mihomo 服务
-echo "启用 MIHOMO 服务..."
-systemctl enable mihomo
+# 启用 mihomo-tproxy 服务
+echo "启用 MIHOMO Tproxy 服务..."
+systemctl enable mihomo-tproxy
 
 # 启动服务
-echo "启动 MIHOMO 服务..."
-systemctl start mihomo
+echo "启动 MIHOMO Tproxy 服务..."
+systemctl start mihomo-tproxy
 
 # 完成
 echo "一键配置完成！现在可以重启系统来测试自动恢复..."
